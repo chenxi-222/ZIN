@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
@@ -21,6 +22,9 @@ import java.util.List;
  */
 @RestController
 
+@RequestMapping("/hello")
+
+
 public class CounterController {
 
   final CounterService counterService;
@@ -31,6 +35,16 @@ public class CounterController {
     this.logger = LoggerFactory.getLogger(CounterController.class);
   }
 
+
+  @GetMapping
+  public String sayo(){
+    return "你好欢迎来到zinzin";
+  }
+
+  @GetMapping(value = "/xixi")
+  public String say0o(){
+    return "你好欢迎来到zinzin2";
+  }
 
   /**
    * 获取当前计数

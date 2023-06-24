@@ -10,5 +10,6 @@ public class WxCloudRunApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(WxCloudRunApplication.class, args);
+    System.out.println("终于的终于");
   }
 }

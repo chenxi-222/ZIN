@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WxCloudRunApplication<springboot-wxcloudrun>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tencent.wxcloudrun.WxCloudRunApplication",
+            "projectName": "springboot-wxcloudrun",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
