@@ -22,9 +22,6 @@ import java.util.List;
  */
 @RestController
 
-@RequestMapping("/hello")
-
-
 public class CounterController {
 
   final CounterService counterService;
@@ -36,15 +33,6 @@ public class CounterController {
   }
 
 
-  @GetMapping
-  public String sayo(){
-    return "你好欢迎来到zinzin";
-  }
-
-  @GetMapping(value = "/xixi")
-  public String say0o(){
-    return "你好欢迎来到zinzin2";
-  }
 
   /**
    * 获取当前计数
